@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.muravlevas"
-version = "1.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -19,7 +19,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     intellijPlatform {
-        create("IC", "2025.1.4.1")
+        create("IC", "2024.1")
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
 
         // Add necessary plugin dependencies for compilation here, example:
@@ -30,7 +30,7 @@ dependencies {
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "251"
+            sinceBuild = "241"
         }
 
         changeNotes = """
